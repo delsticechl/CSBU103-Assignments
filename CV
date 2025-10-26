@@ -1,1 +1,99 @@
+<!DOCTYPE html>
+<!-- Declares the document type and version of HTML -->
+<html lang="en">
+<!-- Root element of the HTML document with language set to English -->
 
+<head>
+  <!-- Contains metadata and links for the document -->
+  <meta charset="UTF-8">
+  <!-- Specifies character encoding for proper text rendering -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Ensures responsive design on different devices -->
+  <title>MKhoi's Curriculum Vitae</title>
+  <!-- Sets the title of the page shown in the browser tab -->
+</head>
+
+<body>
+  <!-- Main content of the webpage -->
+
+  <header>
+    <!-- Header section typically used for introductory content -->
+    <h1>Ngo Huynh Mai Khoi</h1>
+    <!-- Main heading of the CV -->
+    <p>Student Number: 25560029</p>
+    <!-- Paragraph tag used for student number -->
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Ffa%2F34%2Fb9%2Ffa34b947118348728cdf0946d4861eb3.png&f=1&nofb=1&ipt=d0c95d6191b6ca4fc66ab53bd4a2141543f54b2dd7e92ebf4cfd0941d719e9ba" alt="Profile Picture" width="150" height="150">
+    <!-- Displays profile image with alt text for accessibility and size attributes -->
+  </header>
+
+  <nav>
+    <!-- Navigation section for internal links -->
+    <ul>
+      <!-- Unordered list for navigation items -->
+      <li><a href="#education">Education</a></li>
+      <!-- Anchor tag linking to Education section -->
+      <li><a href="#experience">Experience</a></li>
+      <!-- Anchor tag linking to Experience section -->
+      <li><a href="#skills">Skills</a></li>
+      <!-- Anchor tag linking to Skills section -->
+    </ul>
+  </nav>
+
+  <section id="education">
+    <!-- Section tag used to group related content with an ID for linking -->
+    <h2>Education</h2>
+    <!-- Subheading for the Education section -->
+    <p><strong>University of Technology</strong> - Bachelor of Computer Science</p>
+    <!-- Paragraph with bold text using <strong> for emphasis -->
+    <p>Expected Graduation: 2029</p>
+  </section>
+
+  <section id="experience">
+    <!-- Section for work or project experience -->
+    <h2>Experience</h2>
+    <p><em>Intern at ABC Tech</em> - Summer 2025</p>
+    <!-- Italicized text using <em> for emphasis -->
+    <ul>
+      <!-- List of responsibilities -->
+      <li>Developed front-end components using HTML/CSS</li>
+      <li>Collaborated with team on UI/UX improvements</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <!-- Section for listing skills -->
+    <h2>Skills</h2>
+    <table border="1">
+      <!-- Table used to organize skills with border attribute -->
+      <tr>
+        <!-- Table row -->
+        <th>Skill</th>
+        <!-- Table header cell -->
+        <th>Proficiency</th>
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <!-- Table data cell -->
+        <td>Advanced</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>Intermediate</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+<td>Beginner</td>
+      </tr>
+    </table>
+  </section>
+
+  <footer>
+    <!-- Footer section for contact info or copyright -->
+    <p>Contact: <a href="mailto:emciki@tmail.com">emciki@tmail.com</a></p>
+    <!-- Email link using mailto attribute -->
+    <p>&copy; 2025 Mai Khoi</p>
+    <!-- Copyright symbol using HTML entity -->
+  </footer>
+
+</body>
+</html>
