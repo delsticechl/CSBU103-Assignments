@@ -1,99 +1,142 @@
 <!DOCTYPE html>
-<!-- Declares the document type and version of HTML -->
 <html lang="en">
-<!-- Root element of the HTML document with language set to English -->
-
 <head>
-  <!-- Contains metadata and links for the document -->
   <meta charset="UTF-8">
-  <!-- Specifies character encoding for proper text rendering -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Ensures responsive design on different devices -->
-  <title>MKhoi's Curriculum Vitae</title>
-  <!-- Sets the title of the page shown in the browser tab -->
+  <title>Student CV</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    .cv-container {
+      width: 80%;
+      max-width: 800px;
+      background: white;
+      margin: 30px auto;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      border-bottom: 2px solid #0078d7;
+      padding-bottom: 15px;
+      margin-bottom: 20px;
+    }
+
+    .header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px;
+      border: 3px solid #0078d7;
+    }
+
+    .header h1 {
+      margin: 0;
+      color: #0078d7;
+    }
+
+    .header p {
+      margin: 4px 0;
+      color: #555;
+    }
+
+    h2 {
+      color: #0078d7;
+      border-bottom: 1px solid #0078d7;
+      padding-bottom: 4px;
+      font-size: 1.2em;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 5px 0 15px 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
-
 <body>
-  <!-- Main content of the webpage -->
+  <div class="cv-container">
+    <div class="header">
+      <img src="anhthe25.jpg" alt="Profile Picture">
+      <div>
+        <h1>Ngo Huynh Mai Khoi</h1>
+        <p>Email: maikhoi15122007@email.com</p>
+        <p>GitHub: github.com/delsticechl</p>
+      </div>
+    </div>
 
-  <header>
-    <!-- Header section typically used for introductory content -->
-    <h1>Ngo Huynh Mai Khoi</h1>
-    <!-- Main heading of the CV -->
-    <p>Student Number: 25560029</p>
-    <!-- Paragraph tag used for student number -->
-    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Ffa%2F34%2Fb9%2Ffa34b947118348728cdf0946d4861eb3.png&f=1&nofb=1&ipt=d0c95d6191b6ca4fc66ab53bd4a2141543f54b2dd7e92ebf4cfd0941d719e9ba" alt="Profile Picture" width="150" height="150">
-    <!-- Displays profile image with alt text for accessibility and size attributes -->
-  </header>
+    <div class="section">
+      <h2>Profile</h2>
+      <p>
+        I’m a Computer Science student passionate about web development and problem-solving.
+        I enjoy learning new technologies and applying them in real projects.
+      </p>
+    </div>
 
-  <nav>
-    <!-- Navigation section for internal links -->
-    <ul>
-      <!-- Unordered list for navigation items -->
-      <li><a href="#education">Education</a></li>
-      <!-- Anchor tag linking to Education section -->
-      <li><a href="#experience">Experience</a></li>
-      <!-- Anchor tag linking to Experience section -->
-      <li><a href="#skills">Skills</a></li>
-      <!-- Anchor tag linking to Skills section -->
-    </ul>
-  </nav>
+    <div class="section">
+      <h2>Education</h2>
+      <ul>
+        <li>Phu Nhuan High School (2022-2025)</li>
+        <li><strong>Computer Science</strong> — University of Information Technology (2025-present) </li>
+      </ul>
+    </div>
 
-  <section id="education">
-    <!-- Section tag used to group related content with an ID for linking -->
-    <h2>Education</h2>
-    <!-- Subheading for the Education section -->
-    <p><strong>University of Technology</strong> - Bachelor of Computer Science</p>
-    <!-- Paragraph with bold text using <strong> for emphasis -->
-    <p>Expected Graduation: 2029</p>
-  </section>
+    <div class="section">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Python, C++</li>
+        <li>SQL, GitHub</li>
+      </ul>
+    </div>
 
-  <section id="experience">
-    <!-- Section for work or project experience -->
-    <h2>Experience</h2>
-    <p><em>Intern at ABC Tech</em> - Summer 2025</p>
-    <!-- Italicized text using <em> for emphasis -->
-    <ul>
-      <!-- List of responsibilities -->
-      <li>Developed front-end components using HTML/CSS</li>
-      <li>Collaborated with team on UI/UX improvements</li>
-    </ul>
-  </section>
+    <div class="section">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Portfolio Website:</strong> Built a personal portfolio using HTML, CSS, and JavaScript.</li>
+      </ul>
+    </div>
 
-  <section id="skills">
-    <!-- Section for listing skills -->
-    <h2>Skills</h2>
-    <table border="1">
-      <!-- Table used to organize skills with border attribute -->
-      <tr>
-        <!-- Table row -->
-        <th>Skill</th>
-        <!-- Table header cell -->
-        <th>Proficiency</th>
-      </tr>
-      <tr>
-        <td>HTML</td>
-        <!-- Table data cell -->
-        <td>Advanced</td>
-      </tr>
-      <tr>
-        <td>CSS</td>
-        <td>Intermediate</td>
-      </tr>
-      <tr>
-        <td>JavaScript</td>
-<td>Beginner</td>
-      </tr>
-    </table>
-  </section>
+    <div class="section">
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>Intern at Bakeology</strong> — Assisted in front-end web development (June–Aug 2025)</li>
+      </ul>
+    </div>
 
-  <footer>
-    <!-- Footer section for contact info or copyright -->
-    <p>Contact: <a href="mailto:emciki@tmail.com">emciki@tmail.com</a></p>
-    <!-- Email link using mailto attribute -->
-    <p>&copy; 2025 Mai Khoi</p>
-    <!-- Copyright symbol using HTML entity -->
-  </footer>
+    <div class="section">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Google Data Analytics – Coursera</li>
+        <li>Web Development – freeCodeCamp</li>
+      </ul>
+    </div>
 
+    <div class="section">
+      <h2>Extracurricular</h2>
+      <ul>
+        <li>Member, Coding Club – Phu Nhuan High School</li>
+        <li>Volunteer, Tech4All Coding Workshop</li>
+      </ul>
+    </div>
+  </div>
 </body>
 </html>
+
