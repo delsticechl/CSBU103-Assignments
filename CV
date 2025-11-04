@@ -1,18 +1,25 @@
 <!DOCTYPE html>
+<!-- Defines the document type and version of HTML -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <!-- Sets the character encoding for the document (supports special characters) -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Makes the page responsive to different screen sizes -->
   <title>Student CV</title>
+  <!-- The title of the web page (appears in browser tab) -->
+
   <style>
+    /* CSS styles define how the content looks (colors, fonts, layout, etc.) */
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
+      font-family: Arial, sans-serif; /* Sets the font style */
+      background-color: #f8f9fa; /* Light background color */
       margin: 0;
       padding: 0;
     }
 
     .cv-container {
+      /* Container that holds all the CV content */
       width: 80%;
       max-width: 800px;
       background: white;
@@ -23,6 +30,7 @@
     }
 
     .header {
+      /* Header section (top of the CV) contains name, picture, contact info */
       display: flex;
       align-items: center;
       border-bottom: 2px solid #0078d7;
@@ -31,25 +39,29 @@
     }
 
     .header img {
+      /* Styles the profile picture */
       width: 120px;
       height: 120px;
-      border-radius: 50%;
+      border-radius: 50%; /* Makes image circular */
       object-fit: cover;
       margin-right: 20px;
       border: 3px solid #0078d7;
     }
 
     .header h1 {
+      /* Main name heading style */
       margin: 0;
       color: #0078d7;
     }
 
     .header p {
+      /* Contact info text style */
       margin: 4px 0;
       color: #555;
     }
 
     h2 {
+      /* Section titles (e.g., Profile, Education, etc.) */
       color: #0078d7;
       border-bottom: 1px solid #0078d7;
       padding-bottom: 4px;
@@ -57,48 +69,67 @@
     }
 
     ul {
+      /* Removes default list bullets and spacing */
       list-style-type: none;
       padding: 0;
       margin: 5px 0 15px 0;
     }
 
     li {
+      /* Adds spacing between list items */
       margin-bottom: 8px;
     }
 
     .section {
+      /* Used for each main section of the CV */
       margin-bottom: 20px;
     }
   </style>
 </head>
 <body>
+  <!-- The body contains all visible content of the page -->
   <div class="cv-container">
+    <!-- Main container that wraps the entire CV -->
+
     <div class="header">
+      <!-- Header: includes photo, name, and contact information -->
       <img src="anhthe25.jpg" alt="Profile Picture">
+      <!-- 'img' tag displays an image; 'alt' gives text if image fails to load -->
+
       <div>
+        <!-- Div used to group text next to the image -->
         <h1>Ngo Huynh Mai Khoi</h1>
+        <!-- h1: main title (the name of the person) -->
         <p>Email: maikhoi15122007@email.com</p>
+        <!-- p: paragraph tag for text -->
         <p>GitHub: github.com/delsticechl</p>
       </div>
     </div>
 
     <div class="section">
+      <!-- Section: Profile -->
       <h2>Profile</h2>
+      <!-- h2: section heading -->
       <p>
+        <!-- Paragraph describing personal summary -->
         I’m a Computer Science student passionate about web development and problem-solving.
         I enjoy learning new technologies and applying them in real projects.
       </p>
     </div>
 
     <div class="section">
+      <!-- Section: Education -->
       <h2>Education</h2>
       <ul>
+        <!-- Unordered list to display multiple education items -->
         <li>Phu Nhuan High School (2022-2025)</li>
-        <li><strong>Computer Science</strong> — University of Information Technology (2025-present) </li>
+        <li><strong>Computer Science</strong> — University of Information Technology (2025-present)</li>
+        <!-- 'strong' tag makes text bold for emphasis -->
       </ul>
     </div>
 
     <div class="section">
+      <!-- Section: Skills -->
       <h2>Skills</h2>
       <ul>
         <li>HTML, CSS, JavaScript</li>
@@ -108,6 +139,7 @@
     </div>
 
     <div class="section">
+      <!-- Section: Projects -->
       <h2>Projects</h2>
       <ul>
         <li><strong>Portfolio Website:</strong> Built a personal portfolio using HTML, CSS, and JavaScript.</li>
@@ -115,6 +147,7 @@
     </div>
 
     <div class="section">
+      <!-- Section: Experience -->
       <h2>Experience</h2>
       <ul>
         <li><strong>Intern at Bakeology</strong> — Assisted in front-end web development (June–Aug 2025)</li>
@@ -122,6 +155,7 @@
     </div>
 
     <div class="section">
+      <!-- Section: Certifications -->
       <h2>Certifications</h2>
       <ul>
         <li>Google Data Analytics – Coursera</li>
@@ -130,6 +164,7 @@
     </div>
 
     <div class="section">
+      <!-- Section: Extracurricular activities -->
       <h2>Extracurricular</h2>
       <ul>
         <li>Member, Coding Club – Phu Nhuan High School</li>
@@ -139,4 +174,3 @@
   </div>
 </body>
 </html>
-
