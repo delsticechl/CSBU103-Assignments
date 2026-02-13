@@ -1,0 +1,92 @@
+/* Reset some defaults */
+body {
+    font-family: Arial, sans-serif;
+    background:#9face6 100;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Container styling */
+  .container {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    width: 350px;
+  }
+  
+  /* Heading */
+  .container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Form groups */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+  }
+  
+  input:focus {
+    border-color: #6c63ff;
+    outline: none;
+  }
+  
+  /* Button */
+  .btn {
+    width: 100%;
+    padding: 12px;
+    background: #6c63ff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background: #574b90;
+  }
+  
+  /* Error messages */
+  .error {
+    margin-top: 15px;
+    color: #d9534f;
+    font-size: 14px;
+    text-align: center;
+  }
+  .error {
+    margin-top: 15px;
+    color: #d9534f;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .success {
+    margin-top: 15px;
+    color: #28a745;
+    font-size: 14px;
+    text-align: center;
+  }
