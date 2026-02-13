@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slideshow Photo Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Gallery thumbnails */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Slideshow overlay */
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 80%;
+      border-radius: 10px;
+    }
+
+    .lightbox.active {
+      display: flex;
+    }
+
+    /* Navigation arrows */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      font-size: 3rem;
+      color: white;
+      padding: 10px;
+      user-select: none;
+    }
+
+    .prev { left: 20px; }
+    .next { right: 20px; }
+
+    /* Close button */
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 2rem;
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Slideshow Photo Gallery</h1>
+
+  <!-- Gallery thumbnails -->
+  <div class="gallery">
+    <img src="https://picsum.photos/id/1015/400/300" alt="Photo 1" onclick="openLightbox(0)">
+    <img src="https://picsum.photos/id/1025/400/300" alt="Photo 2" onclick="openLightbox(1)">
+    <img src="https://picsum.photos/id/1035/400/300" alt="Photo 3" onclick="openLightbox(2)">
+    <img src="https://picsum.photos/id/1045/400/300" alt="Photo 4" onclick="openLightbox(3)">
+  </div>
+
+  <!-- Slideshow Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <span class="prev" onclick="changeSlide(-1)">&#10094;</span>
+    <img id="lightbox-img" src="" alt="Slideshow Image">
+    <span class="next" onclick="changeSlide(1)">&#10095;</span>
+  </div>
+
+  <script>
+    const images = [
+      "https://picsum.photos/id/1015/800/600",
+      "https://picsum.photos/id/1025/800/600",
+      "https://picsum.photos/id/1035/800/600",
+      "https://picsum.photos/id/1045/800/600"
+    ];
+
+    let currentIndex = 0;
+    let autoplayInterval;
+
+    function openLightbox(index) {
+      currentIndex = index;
+      document.getElementById("lightbox").classList.add("active");
+      document.getElementById("lightbox-img").src = images[currentIndex];
+      startAutoplay(); // optional autoplay
+    }
+
+    function closeLightbox() {
+      document.getElementById("lightbox").classList.remove("active");
+      stopAutoplay();
+    }
+
+    function changeSlide(direction) {
+      currentIndex += direction;
+      if (currentIndex < 0) currentIndex = images.length - 1;
+      if (currentIndex >= images.length) currentIndex = 0;
+      document.getElementById("lightbox-img").src = images[currentIndex];
+    }
+
+    function startAutoplay() {
+      autoplayInterval = setInterval(() => {
+        changeSlide(1);
+      }, 3000); // change every 3 seconds
+    }
+
+    function stopAutoplay() {
+      clearInterval(autoplayInterval);
+    }
+  </script>
+</body>
+</html>
