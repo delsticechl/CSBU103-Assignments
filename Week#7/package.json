@@ -1,0 +1,28 @@
+{
+    "name": "user-registration-app",
+    "version": "1.0.0",
+    "description": "Simple user registration app with jQuery validation and MongoDB backend",
+    "main": "src/app.js",
+    "scripts": {
+        "start": "node src/app.js",
+        "dev": "nodemon src/app.js"
+    },
+    "keywords": [
+        "registration",
+        "express",
+        "mongodb",
+        "jquery",
+        "validation"
+    ],
+    "author": "Your Name",
+    "license": "MIT",
+    "dependencies": {
+        "body-parser": "^1.20.2",
+        "dotenv": "^16.6.1",
+        "express": "^4.18.2",
+        "mongoose": "^7.6.3"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.1"
+    }
+}
